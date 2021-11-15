@@ -6,4 +6,9 @@ edition = "2018"
 
 [dependencies]
 anyhow = "1.0"
-wasmtime = "0.31.0"
+wasmtime = { version = "0.30.0", default-features = false, features = [
+    "cache",
+    "cranelift",
+    "jitdump",
+    "parallel-compilation",
+] }
