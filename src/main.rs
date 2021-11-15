@@ -6,8 +6,9 @@ fn main() -> Result<()> {
     let engine = Engine::default();
     let file_name = "../moonbeam/target/release/wbuild/moonbeam-runtime/moonbeam_runtime.wasm";
     println!("Importing");
+    let now = std::time::Instant::now();
     let module = Module::from_file(&engine, &file_name)?;
-    println!("imported");
+    println!("imported in {} ms", now.elapsed().as_millis());
    // A `Store` is what will own instances, functions, globals, etc. All wasm
     // items are stored within a `Store`, and it's what we'll always be using to
     // interact with the wasm world. Custom data can be stored in stores but for
