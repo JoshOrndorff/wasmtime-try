@@ -1,0 +1,9 @@
+[package]
+name = "wasmtime-example"
+version = "0.1.0"
+authors = ["PureStake"]
+edition = "2018"
+
+[dependencies]
+anyhow = "1.0"
+wasmtime = "0.31.0"
