@@ -16,7 +16,6 @@ fn main() -> Result<()> {
     // TODO: handle errors once "Error: expected 46 imports, found 0" is fixed
     load("./moonbase_runtime_slow.wasm");
     load("./moonbase_fast_runtime.wasm");
-    load("./kusama_runtime.wasm");
 
     Ok(())
 }
