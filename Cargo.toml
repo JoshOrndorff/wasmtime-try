@@ -12,3 +12,4 @@ wasmtime = { version = "0.30.0", default-features = false, features = [
     "jitdump",
     "parallel-compilation",
 ] }
+

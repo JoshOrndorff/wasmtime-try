@@ -15,7 +15,8 @@ fn load(file_name: &str) -> Result<()> {
 fn main() -> Result<()> {
     // TODO: handle errors once "Error: expected 46 imports, found 0" is fixed
     load("../moonbeam/target/release/wbuild/moonbeam-runtime/moonbeam_runtime.wasm");
-    load("../moonbeam/target/release/wbuild/moonbase-runtime/moonbase_runtime.wasm");
+    load("./moonbase_runtime_slow.wasm");
+    load("./moonbase_runtime_fast.wasm");
 
     Ok(())
 }
