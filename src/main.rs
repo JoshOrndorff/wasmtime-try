@@ -14,8 +14,8 @@ fn load(file_name: &str) -> Result<()> {
 
 fn main() -> Result<()> {
     // TODO: handle errors once "Error: expected 46 imports, found 0" is fixed
-    load("./moonbase_runtime_slow.wasm");
-    load("./moonbase_fast_runtime.wasm");
+    load("./moonbase_runtime.compact.wasm");
+    load("./moonriver_runtime.compact.wasm")?;
 
     Ok(())
 }
